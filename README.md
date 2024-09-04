@@ -1,9 +1,20 @@
 
-#Project Objective
+#Project
 
 Automate a Web App with Jenkins
 
 Jenkins is a automation server.
+
+Jenkins automates the process of building, testing and deploying software. 
+With it, you can set up pipelines that trigger automatically when you push 
+code changes which ensures that the code is continuously tested and 
+deployed.
+
+If you want to automate the process of getting your code from a developers 
+laptop to a live server, Jenkins can manage that entire work flow
+
+
+#Project Objective
 
 What we aim to do is:
 -Set up Jenkins on a virtual machine
@@ -57,7 +68,7 @@ lay a foundation for more complex automation tasks.
 
 
 
-#Work Flow
+#Project Work Flow
 
 1. Before you add or make changes to the project, you need to make sure 
 that you always have the current version of the project.
@@ -87,10 +98,13 @@ git checkout -b your-branch-name
 
 
 
-3. Once you’ve made your changes then push the code to your branch 
+3. Once you’ve made your changes then add, commit and push the code to your 
+branch 
 
-To do this type the command:
+To do this type the commands:
 
+git add file-name
+git commit -m "message"
 git push origin your-branch-name
 
 
