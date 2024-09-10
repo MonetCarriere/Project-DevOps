@@ -5,5 +5,5 @@ then
   echo "multipass is already installed"
 else
   echo "installing mulitpass"
-  # command to install mulitpass
+  sudo snap install multipass
 fi
