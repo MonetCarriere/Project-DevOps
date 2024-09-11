@@ -3,5 +3,5 @@ then
   echo "multipass is already installed. 🤘😎"
 else
   echo "Hold on... installing multipass⏳"
-  brew install
+  brew install multipass
 fi
