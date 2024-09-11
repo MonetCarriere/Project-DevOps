@@ -7,3 +7,16 @@ else
   echo "installing mulitpass"
   sudo snap install multipass
 fi
+
+if (multipass info mos-vm)
+then 
+  echo 'the VM already exists'
+else
+  echo 'creating mos-vm'
+  multipass launch --name mos-vm
+fi
+if (multipass info mos-vm)
+then 
+  echo 'launching mos-vm'
+  multipass shell mos-vm
+fi
