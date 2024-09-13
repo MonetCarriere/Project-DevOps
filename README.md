@@ -1,7 +1,8 @@
 
 #Project
 
-Automate a Web App with Jenkins
+
+Understanding Jenkins:
 
 Jenkins is a automation server.
 
@@ -14,57 +15,18 @@ If you want to automate the process of getting your code from a developers
 laptop to a live server, Jenkins can manage that entire work flow
 
 
+
+
 #Project Objective
 
 What we aim to do is:
--Set up Jenkins on a virtual machine
--Create a basic web app (a simple html/css site)
--Use Jenkins to automate the process of building and deploying this app to 
-the web server
+1. Create a script that builds a vm
+2. Build a vm using the script
+3. Create a script that installs and runs jenkins
+4. Run the jenkins install script in the vm
+5. View the vm IP on 8080 and see Jenkins running
 
 
-Steps to complete this project:
-
-1. SET UP THE VIRTUAL MACHINE
--Install a VM
--Install Ubuntu on the VM
--Install Jenkins on the VM
-
-2. CREATE A SIMPLE WEB APP
--Develop a very basic html/css static site or Node.js app
-(just a simple Hello World is fine)
--Put it on Github
-
-3. CONFIGURE JENKINS ON THE VM
--Install Git and Node.js (if using a Node.js app) on the VM.
--Set up a Jenkins Job
-(create a new jenkins job to pull your code from the repo)
-
-4. CONFIFURE THE BUILD
--If it's a Node.js app, set up the build to install dependencies and run 
-the app.
-
-5. AUTOMATE THE PIPELINE
--Set up a Githook or a Jenkins trigger to automatically run a pipeline 
-whenever you push changes to the git repo. ...Jenkins will automatically 
-pull the latest code, build the app and deploy it.
-
-6. TEST AND IMPROVE
--Push changes to your Git repo and see the pipeline in action.
--Test the web app after each deployment to ensure everthig works smooth
-
-Bonus:
-Explore adding more stages to the pipeline.
-
-
-
-#Project Outcome
-
-By the end of this project, we will have a functional Jenkins pipeline that 
-automatically builds and deploys the web app whenever we update the code.
-
-This will give us a basic understanding of Jenkins, automation, and will 
-lay a foundation for more complex automation tasks.
 
 
 
