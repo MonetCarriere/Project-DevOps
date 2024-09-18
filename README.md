@@ -79,3 +79,9 @@ main branch.
 Don’t forget to delete your branch once you’re done. 🤓
 
 
+PROJECT COMMANDS:
+
+To start the project on a Mac run:
+bash installVM-mac.sh && multipass shell mos-vm
+
+
