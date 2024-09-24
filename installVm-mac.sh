@@ -14,16 +14,5 @@ if multipass info mos-vm >/dev/null 2>&1; then
 else
   echo "Creating mos-vm"
   multipass launch --name mos-vm
+  multipass list
 fi
-
-
-#Inform the user that the VM exists ang give instuctions 
-to shell in manually
-if multipass info mos-vm >/dev/null 2>&1; then
-  echo "mos-vm is ready! You can shell into it manually 
-with: 'multipass shell mos-vm'"
-fi 
-
-
-
-
