@@ -1,8 +1,9 @@
 
-#Project
+#PROJECT
 
 
-Understanding Jenkins:
+#Understanding Jenkins
+
 
 Jenkins is a automation server.
 
@@ -16,17 +17,12 @@ laptop to a live server, Jenkins can manage that entire work flow
 
 
 
-
-#Project Objective
-
 What we aim to do is:
 1. Create a script that builds a vm
 2. Build a vm using the script
 3. Create a script that installs and runs jenkins
 4. Run the jenkins install script in the vm
 5. View the vm IP on 8080 and see Jenkins running
-
-
 
 
 
@@ -78,5 +74,11 @@ main branch.
 👨‍💻👩‍💻🧑‍💻
 
 Don’t forget to delete your branch once you’re done. 🤓
+
+
+PROJECT COMMANDS:
+
+To start the project on a Mac run:
+bash installVM-mac.sh && multipass shell mos-vm
 
 
