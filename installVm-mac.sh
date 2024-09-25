@@ -7,9 +7,9 @@ else
   brew install multipass
 fi
 
-#Wait 30 seconds to ensure Multipass downloads before the VM installs
-echo "Multipass is almost ready... just give it 30 more seconds ⏰"
-sleep 30
+#Wait 10  seconds to ensure Multipass downloads before the VM installs
+echo "Multipass is almost ready... just give it 10 more seconds ⏰"
+sleep 10
 
 if (multipass info mos-vm)
 then
