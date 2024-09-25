@@ -76,9 +76,17 @@ main branch.
 Don’t forget to delete your branch once you’re done. 🤓
 
 
-PROJECT COMMANDS:
+# PROJECT COMMANDS:
 
 To start the project on a Mac run:
 bash installVM-mac.sh && multipass shell mos-vm
 
+To delete all VM's created with multipass run:
+multipass delete --all --purge
+
+To remove multipass from your linuxmint machine run:
+sudo snap remove multipass
+
+To remove multipass from your Mac machine run:
+brew uninstall --zap multipass
 
