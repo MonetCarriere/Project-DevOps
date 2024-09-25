@@ -17,11 +17,7 @@ then
 else
   echo "Creating mos-vm"
   multipass launch --name mos-vm
+  multipass list
 fi
 
 
-if (multipass info mos-vm)
-then
-  echo "Launching mos-vm"
-  multipass shell mos-vm
-fi
