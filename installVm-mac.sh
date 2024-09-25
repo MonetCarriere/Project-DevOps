@@ -7,12 +7,21 @@ else
   brew install multipass
 fi
 
+#Wait 30 seconds to ensure Multipass downloads before the VM installs
+echo "Multipass is almost ready... just give it 30 more seconds ⏰"
+sleep 30
 
-#Check if mos-vm exists
-if multipass info mos-vm >/dev/null 2>&1; then
+if (multipass info mos-vm)
+then
   echo "The VM already exists"
 else
   echo "Creating mos-vm"
   multipass launch --name mos-vm
-  multipass list
+fi
+
+
+if (multipass info mos-vm)
+then
+  echo "Launching mos-vm"
+  multipass shell mos-vm
 fi
