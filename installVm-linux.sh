@@ -6,6 +6,8 @@ then
 else
   echo "installing mulitpass"
   sudo snap install multipass
+  echo 'im gonna take a shit for ten seconds wait here'
+  sleep 10
 fi
 
 if (multipass info mos-vm)
@@ -14,9 +16,5 @@ then
 else
   echo 'creating mos-vm'
   multipass launch --name mos-vm
-fi
-if (multipass info mos-vm)
-then 
-  echo 'launching mos-vm'
-  multipass shell mos-vm
+  multipass list
 fi
