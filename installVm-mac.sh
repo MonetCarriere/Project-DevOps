@@ -20,4 +20,6 @@ else
   multipass list
 fi
 
-
+#Transfer the file to the VM
+echo "Transferring installJenkinsInVm.sh to mos-vm"
+multipass transfer /Users/mo/Documents/Project-DevOps/installJenkinsInVm.sh mos-vm:/home/ubuntu/installJenkinsInVm.sh
