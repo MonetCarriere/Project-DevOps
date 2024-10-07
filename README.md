@@ -15,8 +15,9 @@ sudo snap remove multipass
 To remove multipass from your Mac machine run:
 brew uninstall --zap multipass
 
-To transfer file from local to vm:
-multipass transfer /
+To transfer file from local to vm, cd to Project-DevOps and run the following command:
+multipass transfer installJenkinsInVm.sh mos-vm:/home/ubuntu/installJenkinsInVm.sh
+
 
 #Understanding Jenkins
 
