@@ -1,22 +1,36 @@
 
-#PROJECT
+# PROJECT
 
 # PROJECT COMMANDS:
 
+# 1
 To start the project on a Mac run:
-bash installVM-mac.sh && multipass shell mos-vm
+bash installVm-mac.sh 
 
+To start project on linux run:
+`bash installVm-linux.sh`
+
+# 2
+To transfer file from local to vm, cd to Project-DevOps and run the following command:
+`multipass transfer installJenkinsInVm.sh mos-vm:/home/ubuntu/installJenkinsInVm.sh`
+
+# 3
+To install Jenkins in the VM shell into your multipass VM and run the installJenkins script: 
+`multipass shell mos-vm`
+
+Inside the vm run 
+`bash installJenkinsInVM.sh`
+
+# Additional Info
 To delete all VM's created with multipass run:
-multipass delete --all --purge
+`multipass delete --all --purge`
 
 To remove multipass from your linuxmint machine run:
-sudo snap remove multipass
+`sudo snap remove multipass`
 
 To remove multipass from your Mac machine run:
-brew uninstall --zap multipass
+`brew uninstall --zap multipass`
 
-To transfer file from local to vm, cd to Project-DevOps and run the following command:
-multipass transfer installJenkinsInVm.sh mos-vm:/home/ubuntu/installJenkinsInVm.sh
 
 
 What we aim to do is:
